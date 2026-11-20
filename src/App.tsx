@@ -192,7 +192,7 @@ export default function App() {
   useEffect(() => {
     if (!supabase) return;
     void supabase.auth.getSession().then(async ({ data: { session } }) => {
-      if (!session?.user) return;
+      if (!session?.user || !supabase) return;
       const { data: prof } = await supabase
         .from('profiles')
         .select('id, email, full_name, dni_nie')

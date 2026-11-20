@@ -481,7 +481,7 @@ export default function App() {
                       type="text"
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
-                      placeholder="Ej. Carlos Navarro"
+                      name="full_name" autoComplete="name" placeholder="Ej. Carlos Navarro"
                       className="w-full px-4 py-3 rounded-2xl bg-brand-canvas border border-slate-200 text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-blue"
                     />
                   </div>
@@ -494,7 +494,7 @@ export default function App() {
                       type="text"
                       value={dniNie}
                       onChange={(e) => setDniNie(e.target.value.toUpperCase())}
-                      placeholder="Ej. Y1234567L o 12345678A"
+                      name="dni_nie_doc" autoComplete="off" placeholder="Ej. Y1234567L o 12345678A"
                       className="w-full px-4 py-3 rounded-2xl bg-brand-canvas border border-slate-200 text-brand-navy uppercase focus:outline-none focus:ring-2 focus:ring-brand-blue"
                     />
                   </div>
@@ -509,7 +509,7 @@ export default function App() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="tu@correo.com"
+                  name="email" autoComplete="email" placeholder="tu@correo.com"
                   className="w-full px-4 py-3 rounded-2xl bg-brand-canvas border border-slate-200 text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-blue"
                 />
               </div>
@@ -522,7 +522,7 @@ export default function App() {
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  placeholder="••••••••"
+                  name="password" autoComplete="new-password" placeholder="••••••••"
                   className="w-full px-4 py-3 rounded-2xl bg-brand-canvas border border-slate-200 text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-blue"
                 />
               </div>
